@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/date1View"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="374dp"
+        android:layout_marginTop="17dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Date1"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/loadView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/im1View"
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date1View"
+        app:srcCompat="@android:drawable/screen_background_dark_transparent"
+        />
+
+    <TextView
+        android:id="@+id/title1View"
+        android:layout_width="202dp"
+        android:layout_height="24dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Title1"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/descrip1View"
+        app:layout_constraintStart_toStartOf="@+id/descrip1View"
+        app:layout_constraintTop_toBottomOf="@+id/im1View"/>
+
+    <TextView
+        android:id="@+id/descrip1View"
+        android:layout_width="200dp"
+        android:layout_height="33dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Descrip1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title1View"/>
+
+    <TextView
+        android:id="@+id/date2View"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Date2"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/im2View"
+        app:layout_constraintStart_toStartOf="@+id/descrip1View"
+        app:layout_constraintTop_toBottomOf="@+id/descrip1View"/>
+
+    <ImageView
+        android:id="@+id/im2View"
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/title2View"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date2View"
+        app:srcCompat="@android:drawable/screen_background_dark_transparent"
+        />
+
+    <TextView
+        android:id="@+id/title2View"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Title2"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/descrip2View"
+        app:layout_constraintStart_toStartOf="@+id/descrip2View"
+        app:layout_constraintTop_toBottomOf="@+id/im2View"/>
+
+    <TextView
+        android:id="@+id/descrip2View"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Descrip2"
+        app:layout_constraintBottom_toTopOf="@+id/loadIndicator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title2View"/>
+
+    <TextView
+        android:id="@+id/loadIndicator"
+        android:layout_width="385dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="1dp"
+        android:background="@android:color/holo_blue_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descrip2View"
+        tools:background="@android:color/holo_blue_dark"/>
+
+    <ImageView
+        android:id="@+id/loadView"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/screen_background_dark_transparent"
+        />
+</android.support.constraint.ConstraintLayout>
